@@ -11,22 +11,22 @@ const Register = () => {
     <MainContainer>
       <form action="submit" onSubmit={(e) => e.preventDefault()}>
         <div className={styles.container}>
-          <Title>Register</Title>
+          <Title>Бүртгүүлэх</Title>
           <input
             type="email"
-            placeholder="Email"
+            placeholder="Имэйл"
             autoComplete="username"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Нууц үг"
             autoComplete="password"
             onChange={(e) => setPassword(e.target.value)}
             value={password}
           />
-          <button type="submit">Register</button>
+          <button type="submit">Бүртгүүлэх</button>
         </div>
       </form>
     </MainContainer>

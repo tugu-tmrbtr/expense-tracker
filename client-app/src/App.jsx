@@ -5,6 +5,7 @@ import MobileNavbar from "./components/Navbar/MobileNavbar";
 import MainContainer from "./components/Containers/MainContainer";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route element={<Outlet />}>
+            <Route path="/" element={<Home />} />
             <Route
               path="/*"
               element={

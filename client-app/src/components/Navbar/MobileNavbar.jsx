@@ -30,14 +30,14 @@ const MobileNavbar = () => {
               optionClass={styles.linkColor}
               clickHandler={closeNav}
             >
-              <h3>Home</h3>
+              <h3>Нүүр</h3>
             </ListItemList>
             <ListItemList
               url="categories"
               optionClass={styles.linkColor}
               clickHandler={closeNav}
             >
-              <h3>Categories</h3>
+              <h3>Ангилал</h3>
             </ListItemList>
             <ListItemList
               url="transactions"
@@ -45,14 +45,14 @@ const MobileNavbar = () => {
               optionClass={styles.linkColor}
               clickHandler={closeNav}
             >
-              <h3>Transactions</h3>
+              <h3>Гүйлгээ</h3>
             </ListItemList>
             <ListItemList
               url="wallet"
               optionClass={styles.linkColor}
               clickHandler={closeNav}
             >
-              <h3>Wallet</h3>
+              <h3>Хэтэвч</h3>
             </ListItemList>
             <div className={styles.mobileMenuLinks}>
               <ListItemList
@@ -60,7 +60,7 @@ const MobileNavbar = () => {
                 optionClass={styles.linkColor}
                 clickHandler={closeNav}
               >
-                <h3>Profile</h3>
+                <h3>Профайл</h3>
               </ListItemList>
             </div>
             <div className={styles.mobileMenuLinks}>
@@ -69,11 +69,11 @@ const MobileNavbar = () => {
                 optionClass={styles.linkColor}
                 clickHandler={closeNav}
               >
-                <h3>Settings</h3>
+                <h3>Тохиргоо</h3>
               </ListItemList>
             </div>
             <ListItemList url="logout" optionClass={styles.linkColor}>
-              <h3>Logout</h3>
+              <h3>Гарах</h3>
             </ListItemList>
           </ul>
         </nav>

@@ -1,12 +1,12 @@
 .container {
   .iconContainer {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 2px solid transparent;
+    border: 0.125rem solid transparent;
     background: var(--color-dark-600);
     cursor: pointer;
     transition: border-color ease-in-out 250ms;
@@ -19,8 +19,8 @@
       }
     }
     svg {
-      width: 23px;
-      height: 23px;
+      width: 1.44rem;
+      height: 1.44rem;
       color: whitesmoke;
       transition: color ease-in-out 250ms;
     }
@@ -41,7 +41,7 @@
     transform: translateX(100%);
     min-height: 100vh;
     transition: transform 600ms ease-in-out;
-    border-left: 2px solid var(--color-dark-600);
+    border-left: 0.125rem solid var(--color-dark-600);
     ul {
       display: flex;
       flex-direction: column;

@@ -13,32 +13,32 @@ const Navbar = () => {
       <nav>
         <ul>
           <ListItemList url="">
-            <h3>Home</h3>
+            <h3>Нүүр</h3>
           </ListItemList>
           <ListItemList url="categories">
-            <h3>Categories</h3>
+            <h3>Ангилал</h3>
           </ListItemList>
           <ListItemList url="transactions">
-            <h3>Transactions</h3>
+            <h3>Гүйлгээ</h3>
           </ListItemList>
           <ListItemList url="wallet">
-            <h3>Wallet</h3>
+            <h3>Хэтэвч</h3>
           </ListItemList>
           <div className={styles.mobileMenuLinks}>
             <ListItemList url="profile">
-              <h3>Profile</h3>
+              <h3>Профайл</h3>
             </ListItemList>
           </div>
           <div className={styles.mobileMenuLinks}>
             <ListItemList url="settings">
-              <h3>Settings</h3>
+              <h3>Тохиргоо</h3>
             </ListItemList>
           </div>
           <ListItemList
             url="logout"
             // clickHandler={logoutHandler}
           >
-            <h3>Logout</h3>
+            <h3>Гарах</h3>
           </ListItemList>
         </ul>
       </nav>

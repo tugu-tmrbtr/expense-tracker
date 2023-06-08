@@ -11,26 +11,26 @@ const Login = () => {
     <MainContainer>
       <form action="submit" onSubmit={(e) => e.preventDefault()}>
         <div className={styles.container}>
-          <Title>Login</Title>
+          <Title>Нэвтрэх</Title>
           <input
             type="email"
-            placeholder="Email"
+            placeholder="Имэйл"
             autoComplete="username"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Нууц үг"
             autoComplete="password"
             onChange={(e) => setPassword(e.target.value)}
             value={password}
           />
           <button className={styles.button} type="submit">
-            Login
+            Нэвтрэх
           </button>
           <span>
-            Don&apos;t have a account ? <Link to={"/register"}> Register</Link>
+            Бүртгэлгүй юу ? <Link to={"/register"}> Бүртгүүлэх</Link>
           </span>
         </div>
       </form>
