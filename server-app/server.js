@@ -9,6 +9,7 @@ const PORT = process.env.PORT;
 const app = express();
 const { PrismaClient } = require("@prisma/client");
 const { prisma } = require("./app/config/prisma.config");
+const authRouter = require("./app/routes/auth.routes.js");
 // const PrismaStore = require("./lib/index")(session);
 
 app.use(cors());
@@ -26,7 +27,5 @@ app.use((err, req, res, next) => {
     message: err.message,
   });
 });
-app.get("/", async (req, res, next) => {
-  res.send({ message: "Awesome it works 🐻" });
-});
+app.use("/api/user", authRouter);
 app.listen(PORT, () => console.log(`🚀 server started : ${PORT}`));
