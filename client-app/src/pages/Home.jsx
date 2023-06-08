@@ -3,6 +3,8 @@ import MainContainer from "../components/Containers/MainContainer";
 import SearchBar from "../components/Home/SearchBar";
 import { Title } from "../components/Titles/Titles";
 import CategoryCard from "../components/Cards/CategoryCard";
+import TransactionCard from "../components/Cards/TransactionCard";
+import HomeProfile from "../components/Home/HomeProfile";
 
 const Home = () => {
   return (
@@ -12,7 +14,7 @@ const Home = () => {
           <SearchBar />
         </div>
         <div className={style.categories}>
-          <Title>Categories Last 30 days</Title>
+          <Title>Ангилал Сүүлийн 30 хоног</Title>
           <div className={style.content}>
             <CategoryCard />
             <CategoryCard />
@@ -20,6 +22,18 @@ const Home = () => {
             <CategoryCard />
           </div>
         </div>
+        <div className={style.transactions}>
+          <Title>Сүүлийн гүйлгээнүүд</Title>
+          <div className={style.content}>
+            <TransactionCard />
+            <TransactionCard />
+            <TransactionCard />
+            <TransactionCard />
+          </div>
+        </div>
+      </div>
+      <div className={style.profile}>
+        <HomeProfile />
       </div>
     </MainContainer>
   );
